@@ -7,8 +7,8 @@ Session #1 - [Wed July 8, 2015](https://skillup2015eastlansing.sched.org/event/4
 Session #2 - [Fri July 10, 2015](https://skillup2015eastlansing.sched.org/event/42df5ba09a61b3821b6db9e78adb868b#.VZGT5u1VhBc)
 
 # Instructions
-1. Install [NodeJS](https://nodejs.org/) - this will include NPM
-2. Clone this repository (https://github.com/RichMcL/skill-up-2015)
-3. Run <code>npm install</code> from the root of the project
-4. Run <code>npm install -g nodemon</code> to install [nodemon](http://nodemon.io/)
-5. Run <code>nodemon server.js</code>
+- Install [NodeJS](https://nodejs.org/) - this will include NPM
+- Clone this repository (https://github.com/RichMcL/skill-up-2015)
+- Run <code>npm install</code> from the root of the project
+- Run <code>npm install -g nodemon</code> to install [nodemon](http://nodemon.io/)
+- Run <code>nodemon server.js</code>
