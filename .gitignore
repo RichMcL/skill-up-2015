@@ -1,0 +1,12 @@
+node_modules/
+target/
+build/
+.DS_Store
+out
+*.iml
+*.ipr
+*.iws
+.idea
+.settings
+.classpath
+.project
