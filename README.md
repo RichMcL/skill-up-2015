@@ -18,4 +18,4 @@ Session #2 - [Fri July 10, 2015](https://skillup2015eastlansing.sched.org/event/
  - Watches for changes to automatically restart server
 - Run <code>nodemon server</code>
  - Or run <code>node server</code> without nodemon
-- Navigate to <code>http://localhost:8080/</code>
+- Run <code>http://localhost:8080/</code> in the browser
