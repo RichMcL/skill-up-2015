@@ -16,6 +16,6 @@ Session #2 - [Fri July 10, 2015](https://skillup2015eastlansing.sched.org/event/
 - Run <code>npm install</code> from the root of the project
 - Run <code>npm install -g nodemon</code> to install [nodemon](http://nodemon.io/) (Optional)
  - Watches for changes to automatically restart server
-- Run <code>nodemon server</code>
+- Run <code>nodemon server.js</code>
  - Or run <code>node server</code> without nodemon
 - Run <code>http://localhost:8080/</code> in the browser
