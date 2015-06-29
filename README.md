@@ -9,7 +9,7 @@ Session #2 - [Fri July 10, 2015](https://skillup2015eastlansing.sched.org/event/
 # Instructions
 - Install [NodeJS](https://nodejs.org/) 
  - this will include NPM
-- To use git from the command line, download [git](http://git-scm.com/downloads)
+- Download [git](http://git-scm.com/downloads) to use the CLI
 - Clone this repository
  - <code>git clone https://github.com/RichMcL/skill-up-2015</code> -- downloads to working directory
  - or download and extract the [ZIP](https://github.com/RichMcL/skill-up-2015/archive/master.zip)
