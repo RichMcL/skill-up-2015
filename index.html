@@ -1,9 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html data-ng-app="skill-up-ng-app">
     <head>
         <title>Skill-Up 2015 East Lansing</title>
+        <script type="text/javascript" src="/node_modules/angular/angular.min.js"></script>
+        <script type="text/javascript" src="/scripts/app.js"></script>
     </head>
-    <body>
+    <body data-ng-controller="MainCtrl as main">
         <h1>Skill-Up 2015 East Lansing</h1>
+        <div>
+            {{main.text}}
+        </div>
     </body>
 </html>
