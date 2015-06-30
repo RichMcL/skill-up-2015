@@ -3,6 +3,7 @@ Shop - Check out project, run npm install, get index running from server
 
 Talk - Talk about express
 Shop - Set up an HTTP resource express, call from the browser, see the json in the browser
+// Do we need express routing?
 
 Talk - Angular Refresh
 Shop - Use $http to call the express resource
