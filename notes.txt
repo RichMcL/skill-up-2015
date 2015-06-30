@@ -1,0 +1,10 @@
+Talk #1 - Talk about Node/NPM
+Shop #1 - Check out project, run npm install, get index running from server
+
+Talk #2 - Talk about Grunt
+Shop #2 - Use npm to install grunt, create a empty Gruntfile.js (http://gruntjs.com/getting-started#package.json)
+
+Talk #3 - Talk about LESS
+Shop #3 - Write a grunt watch to build LESS => CSS
+
+Talk #4 - Talk about Jasmine/Karma
