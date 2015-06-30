@@ -19,3 +19,6 @@ Session #2 - [Fri July 10, 2015](https://skillup2015eastlansing.sched.org/event/
 - Run <code>nodemon server.js</code>
  - Or run <code>node server</code> without nodemon
 - Run <code>http://localhost:8080/</code> in the browser
+
+- For the solution branch
+<code>git clone -b answers https://github.com/RichMcL/skill-up-2015.git skill-up-2015-answers</code>
