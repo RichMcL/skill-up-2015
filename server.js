@@ -15,15 +15,34 @@ var users = [
     }
 ];
 
-app.post("/login", function(req, res){
+var authenticatedUser;
+
+app.post("/login", function (req, res) {
     console.log(req.body);
     var user = req.body;
 
-    var userMatch = _.find(users, function(u) {
+    if (!user || !user.username || !user.password) {
+        res.status(422).send();
+    }
+
+    var usernameMatch = _.find(users, function (u) {
         return u.username === user.username;
     });
 
-    res.send(userMatch);
+    if (usernameMatch.password !== user.password) {
+        res.status(401).send();
+    }
+
+    authenticatedUser = _.omit(usernameMatch, 'password');
+    res.status(200).send(authenticatedUser);
+});
+
+app.get("/users/current", function (req, res) {
+    if (authenticatedUser) {
+        res.status(200).send(authenticatedUser);
+    }
+
+    res.status(404).send();
 });
 
 app.listen(port);

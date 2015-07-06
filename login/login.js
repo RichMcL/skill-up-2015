@@ -9,7 +9,9 @@ skillup.controller("LoginCtrl", ["$scope", "$http", function ($scope, $http) {
         console.log("login!");
 
         $http.post("/login", login.user).then(function(res){
-            console.log("res", res);
+            window.location.href = "#/home";
+        }, function(){
+            alert("login failed");
         });
     }
 }]);
