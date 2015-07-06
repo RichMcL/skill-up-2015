@@ -32,12 +32,12 @@ app.post("/login", function (req, res) {
         return u.username === user.username;
     });
 
-    if (usernameMatch.password !== user.password) {
+    if (!usernameMatch || usernameMatch.password !== user.password) {
         res.status(401).send();
+    } else {
+        authenticatedUser = _.omit(usernameMatch, 'password');
+        res.status(200).send(authenticatedUser);
     }
-
-    authenticatedUser = _.omit(usernameMatch, 'password');
-    res.status(200).send(authenticatedUser);
 });
 
 app.post("/logout", function (req, res) {
