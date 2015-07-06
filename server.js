@@ -80,9 +80,10 @@ app.put("/users/current/games", function (req, res) {
         var gameMatch = _.find(authenticatedUser.games, { title: game.title });
         if (gameMatch) {
             gameMatch.beat = !gameMatch.beat;
+            res.status(200).send();
+        } else {
+            res.status(404).send();
         }
-
-        res.status(200).send();
     } else {
         res.status(401).send();
     }
