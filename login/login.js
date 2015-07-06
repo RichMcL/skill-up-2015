@@ -7,5 +7,9 @@ skillup.controller("LoginCtrl", ["$scope", "$http", function ($scope, $http) {
 
     login.submit = function(){
         console.log("login!");
+
+        $http.post("/login", login.user).then(function(res){
+            console.log("res", res);
+        })
     }
 }]);

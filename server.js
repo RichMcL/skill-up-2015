@@ -5,7 +5,14 @@ var app = express();
 
 app.use(express.static(__dirname));
 
-app.get('/hello', function(req, res){
+var users = [
+    {
+        username: "mario",
+        password: "mario"
+    }
+];
+
+app.post("/login", function(req, res){
     res.send('XHR Response!');
 });
 
