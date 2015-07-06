@@ -1,7 +1,18 @@
 .panel-body {
-    input.form-control {
-        width: 50%;
-        display: inline-block;
-        margin-bottom: 5px;
+    input {
+        &.form-control {
+            width: 50%;
+            display: inline-block;
+            margin-bottom: 5px;
+        }
+    }
+
+    ul {
+        list-style: none;
+        padding-left: 0px;
+
+        li:nth-child(even) {
+            background-color: #e8e8e8;
+        }
     }
 }

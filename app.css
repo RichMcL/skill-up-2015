@@ -3,3 +3,10 @@
   display: inline-block;
   margin-bottom: 5px;
 }
+.panel-body ul {
+  list-style: none;
+  padding-left: 0px;
+}
+.panel-body ul li:nth-child(even) {
+  background-color: #e8e8e8;
+}
