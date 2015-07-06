@@ -3,13 +3,11 @@
     <head>
         <title>Skill-Up 2015 East Lansing</title>
         <script type="text/javascript" src="/node_modules/angular/angular.min.js"></script>
+        <script type="text/javascript" src="/node_modules/angular-route/angular-route.min.js"></script>
         <script type="text/javascript" src="/scripts/app.js"></script>
     </head>
     <body data-ng-controller="MainCtrl as main">
         <h1>Skill-Up 2015 East Lansing</h1>
-        <div>
-            {{main.text}}<br>
-            XHR test: {{main.xhrTest}}
-        </div>
+        <data-ng-view></data-ng-view>
     </body>
 </html>
