@@ -11,5 +11,9 @@ skillup.controller("HomeCtrl", ["$scope", "$http", function ($scope, $http) {
         window.location.href = "#/login";
     });
 
-
+    home.logout = function(){
+        $http.post("/logout").then(function(res){
+            window.location.href = "#/login";
+        });
+    };
 }]);
