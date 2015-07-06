@@ -1,1 +1,7 @@
-<h1>Home</h1>
+<div id="home" data-ng-controller="HomeCtrl as home">
+    <h1>Home</h1>
+    <div>
+        Welcome, {{home.user.username}}!
+    </div>
+    <button data-ng-click="home.logout()">Logout</button>
+</div>

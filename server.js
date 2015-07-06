@@ -12,13 +12,16 @@ var users = [
     {
         username: "mario",
         password: "mario"
+    },
+    {
+        username: "luigi",
+        password: "luigi"
     }
 ];
 
 var authenticatedUser;
 
 app.post("/login", function (req, res) {
-    console.log(req.body);
     var user = req.body;
 
     if (!user || !user.username || !user.password) {
@@ -36,6 +39,13 @@ app.post("/login", function (req, res) {
     authenticatedUser = _.omit(usernameMatch, 'password');
     res.status(200).send(authenticatedUser);
 });
+
+app.post("/logout", function (req, res) {
+    authenticatedUser = null;
+
+    res.status(200).send();
+});
+
 
 app.get("/users/current", function (req, res) {
     if (authenticatedUser) {
