@@ -50,13 +50,25 @@ app.post("/logout", function (req, res) {
     res.status(200).send();
 });
 
-
 app.get("/users/current", function (req, res) {
     if (authenticatedUser) {
         res.status(200).send(authenticatedUser);
+    } else {
+        res.status(404).send();
     }
+});
 
-    res.status(404).send();
+app.post("/users/current/games", function (req, res) {
+    var game = req.body;
+
+    if (!game || !game.title) {
+        res.status(422).send();
+    } else if (authenticatedUser) {
+        authenticatedUser.games.push(game);
+        res.status(200).send();
+    } else {
+        res.status(401).send();
+    }
 });
 
 app.listen(port);

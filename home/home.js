@@ -13,11 +13,12 @@ skillup.controller("HomeCtrl", ["$scope", "$http", function ($scope, $http) {
     });
 
     home.addGame = function(){
-        if (home.newGame.title) {
+        $http.post("/users/current/games", home.newGame).then(function(res){
             home.user.games.push(home.newGame);
-        }
-
-        home.newGame = {};
+            home.newGame = {};
+        }, function(res){
+            alert("Game could not be added");
+        });
     };
 
     home.logout = function(){

@@ -1,4 +1,4 @@
-<div id="home" data-ng-controller="HomeCtrl as home">
+<div id="home" class="panel-body" data-ng-controller="HomeCtrl as home">
     <h3>Home</h3>
     <div>
         Welcome, {{home.user.name}}!
@@ -6,7 +6,7 @@
     <h4>Favorite Games</h4>
     <ul>
         <li data-ng-repeat="game in home.user.games">{{game.title}}</li>
-        <li><input type="text" data-ng-model="home.newGame.title"><button data-ng-click="home.addGame()">Add Game</button></li>
     </ul>
-    <button data-ng-click="home.logout()">Logout</button>
+    <input type="text" class="form-control" data-ng-model="home.newGame.title"><button data-ng-click="home.addGame()" class="btn btn-success">Add Game</button><br>
+    <button data-ng-click="home.logout()" class="btn btn-danger">Logout</button>
 </div>
