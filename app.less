@@ -11,8 +11,15 @@
         list-style: none;
         padding-left: 0px;
 
-        li:nth-child(even) {
-            background-color: #e8e8e8;
+        li {
+            cursor: pointer;
+
+            &:nth-child(even) {
+                background-color: #e8e8e8;
+            }
+            &.beat {
+                text-decoration: line-through;
+            }
         }
     }
 }

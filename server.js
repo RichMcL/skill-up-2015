@@ -13,13 +13,13 @@ var users = [
         username: "mario",
         password: "mario",
         name: "Mario",
-        games: [{ title: "Super Mario Bros. 3", beat: false }, { title: "Super Mario 64", beat: false }, { title: "Super Smash Bros. Melee", beat: false }]
+        games: [{ title: "Super Mario Bros. 3", beat: false }, { title: "Super Mario 64", beat: true }, { title: "Super Smash Bros. Melee", beat: false }]
     },
     {
         username: "luigi",
         password: "luigi",
         name: "Luigi",
-        games: [{ title: "Super Mario Bros. 2", beat: false }, { title: "Luigi's Mansion", beat: false }, { title: "Mario Kart 64", beat: false }]
+        games: [{ title: "Super Mario Bros. 2", beat: true }, { title: "Luigi's Mansion", beat: false }, { title: "Mario Kart 64", beat: false }]
     }
 ];
 

@@ -2,7 +2,7 @@
     <h3>Welcome, {{home.user.name}}!</h3>
     <h4>Favorite Games</h4>
     <ul>
-        <li data-ng-repeat="game in home.user.games">{{game.title}}</li>
+        <li data-ng-repeat="game in home.user.games" data-ng-class="{ 'beat': game.beat}" data-ng-click="game.beat = !game.beat">{{game.title}}</li>
     </ul>
     <input type="text" class="form-control" data-ng-model="home.newGame.title"><button data-ng-click="home.addGame()" class="btn btn-success">Add Game</button><br>
     <button data-ng-click="home.logout()" class="btn btn-danger">Logout</button>

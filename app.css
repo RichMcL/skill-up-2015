@@ -7,6 +7,12 @@
   list-style: none;
   padding-left: 0px;
 }
+.panel-body ul li {
+  cursor: pointer;
+}
 .panel-body ul li:nth-child(even) {
   background-color: #e8e8e8;
+}
+.panel-body ul li.beat {
+  text-decoration: line-through;
 }
