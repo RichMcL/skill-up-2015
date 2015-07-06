@@ -26,4 +26,10 @@ skillup.controller("HomeCtrl", ["$scope", "$http", function ($scope, $http) {
             window.location.href = "#/login";
         });
     };
+
+    home.changeGameStatus = function(game){
+        $http.put("/users/current/games/", game).then(function(){
+            game.beat = !game.beat;
+        });
+    }
 }]);
