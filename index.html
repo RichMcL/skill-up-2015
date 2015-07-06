@@ -2,12 +2,18 @@
 <html data-ng-app="skill-up-ng-app">
     <head>
         <title>Skill-Up 2015 East Lansing</title>
+        <link rel="stylesheet" type="text/css" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="/node_modules/bootstrap/dist/css/bootstrap-theme.min.css">
+
         <script type="text/javascript" src="/node_modules/angular/angular.min.js"></script>
         <script type="text/javascript" src="/node_modules/angular-route/angular-route.min.js"></script>
         <script type="text/javascript" src="/scripts/app.js"></script>
+        <script type="text/javascript" src="/login/login.js"></script>
     </head>
     <body data-ng-controller="MainCtrl as main">
-        <h1>Skill-Up 2015 East Lansing</h1>
+        <div class="jumbotron">
+            <h1>Skill-Up 2015 East Lansing</h1>
+        </div>
         <data-ng-view></data-ng-view>
     </body>
 </html>

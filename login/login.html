@@ -1,1 +1,6 @@
-<h1>Login</h1>
+<div id="login" data-ng-controller="LoginCtrl as login">
+    <h1>Login</h1>
+    <input type="text" id="username" data-ng-model="login.user.username" placeholder="username">
+    <input type="password" id="password" data-ng-model="login.user.password" placeholder="password">
+    <button data-ng-click="login.submit()">Login</button>
+</div>
