@@ -1,7 +1,12 @@
 <div id="home" data-ng-controller="HomeCtrl as home">
-    <h1>Home</h1>
+    <h3>Home</h3>
     <div>
-        Welcome, {{home.user.username}}!
+        Welcome, {{home.user.name}}!
     </div>
+    <h4>Favorite Games</h4>
+    <ul>
+        <li data-ng-repeat="game in home.user.games">{{game.title}}</li>
+        <li><input type="text" data-ng-model="home.newGame.title"><button data-ng-click="home.addGame()">Add Game</button></li>
+    </ul>
     <button data-ng-click="home.logout()">Logout</button>
 </div>
