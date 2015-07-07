@@ -30,7 +30,7 @@ var authenticatedUser;
  * Create a resource for /heartbeat to test Express
  */
 
-// heartbeat function goes here
+// TODO heartbeat function goes here
 
 app.post("/login", function (req, res) {
     /**
