@@ -30,11 +30,17 @@ var authenticatedUser;
  * Create a resource for /heartbeat to test Express
  */
 
+// heartbeat function goes here
+
 app.post("/login", function (req, res) {
+    /**
+     * EXERCISE #6
+     * Complete the login function by sending appropriate responses
+     */
     var user = req.body;
 
     if (!user || !user.username || !user.password) {
-        res.status(422).send();
+        // TODO missing parameters, return a 422
     }
 
     var usernameMatch = _.find(users, function (u) {
@@ -42,10 +48,11 @@ app.post("/login", function (req, res) {
     });
 
     if (!usernameMatch || usernameMatch.password !== user.password) {
-        res.status(401).send();
+        // TODO invalid credentials, return a 401
     } else {
         authenticatedUser = _.omit(usernameMatch, 'password');
-        res.status(200).send(authenticatedUser);
+        // TODO success, return a 200 and the authenticatedUser object
+
     }
 });
 
