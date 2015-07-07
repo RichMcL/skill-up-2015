@@ -50,6 +50,10 @@ app.post("/logout", function (req, res) {
     res.status(200).send();
 });
 
+app.get("/heartbeat", function(req, res){
+    res.status(200).send({ heartbeat: "I am alive" });
+});
+
 app.get("/users/current", function (req, res) {
     if (authenticatedUser) {
         res.status(200).send(authenticatedUser);
