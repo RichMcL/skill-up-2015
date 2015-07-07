@@ -4,6 +4,17 @@
 	right: 0;
 }
 
+.logo-image {
+    border: 0 !important;
+    background-color: transparent !important;
+}
+.grunt-logo {
+    height: 350px;
+    width: 350px;
+    margin: 0 auto !important;
+    background-image: url("../img/grunt-logo.png");
+    background-repeat: no-repeat;
+}
 small pre {
 	width: 100% !important;
 }

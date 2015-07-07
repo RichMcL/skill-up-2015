@@ -61,17 +61,16 @@
 
                 <section>
                     <section>
-                        <h2>Node</h2>
-                        <p>
+                            <img src="img/node_logo.svg" class="logo-image" style="width: 30%" alt="node logo"/>
+<br>
                             <span class="">Q: What is Node.js? </span><br>
                             <span class="fragment">A: JavaScript runtime environment on an operating system instead of a browser</span>
                             <br>
                             <br>
-                            <span class="fragment">Node makes use of <a href="https://en.wikipedia.org/wiki/V8_(JavaScript_engine)">Google's V8 JavaScript engine</a> to execute code. The V8 engine compiles JavaSCript source to native machine code</span>
+                            <span class="fragment">Node uses <a href="https://en.wikipedia.org/wiki/V8_(JavaScript_engine)">Google's V8 JavaScript engine</a> to execute code. The V8 engine compiles JavaSCript source to native machine code</span>
                             <br>
                             <br>
                             <span class="fragment">Node uses the <a href="https://en.wikipedia.org/wiki/Libuv">libuv library</a> as an abstraction to handle asynchronous file and network functionality</span>
-                        </p>
                     </section>
                     
                     <section>
@@ -300,7 +299,7 @@ var server = app.listen(port, function () {
                 <!-- Example of nested vertical slides -->
                 <section>
                     <section>
-                        <h2>NPM </h2>
+                        <img src="img/npm-logo.svg" alt="npm logo" class="logo-image" style="width: 40%"/><br>
                         <span>Q: What does NPM stand for? </span><br>
 						<span class="fragment">A: Node Package Manager? <span class="fragment">NO!</span></span> <br>
                         <span class="fragment">A: Notable Pastry Maker?</span> <span class="fragment">YES!</span> <br>
@@ -374,8 +373,13 @@ var server = app.listen(port, function () {
                             <pre><code>npm install express --save</code></pre>
                             <small>
                                 This will both install the package and also save the dependency to your package.json file.
-                            </small>
+                            </small> <br>
+                            <small>Dependencies can be organized in to "dependencies", "devDependencies", "peerDependencies", and "bundledDependencies".  </small> <br>
+                            <pre><code>npm install express --save-dev</code></pre>
                         </p>
+                        <small class="caption"><small>
+                            Reference: <a href="http://stackoverflow.com/questions/18875674/whats-the-difference-between-dependencies-devdependencies-and-peerdependencies" target="_blank">What's the difference?</a>
+                        </small></small>
                     </section>
                     <section>
                         <p>
@@ -439,16 +443,16 @@ var server = app.listen(port, function () {
 
                 <section>
                     <section>
-                        <h2>Grunt</h2>
-                        Getting started 
+                        <div class="grunt-logo">&nbsp;</div>
+                        Grunt - Getting started
                         <p>
                             <small>
-                                In order to use Grunt you will need to have the Grunt CLI (command line interface) installed globally.  If you have been following along you should already have it installed!
+                                In order to use Grunt you will need to have the Grunt CLI (command line interface) installed globally.  If you have been following along you might already have it installed!
                             </small>
                             <pre><code>npm install -g grunt-cli</code></pre>
                         
                             <small class="caption"><small>
-                                Docs: <a href="hhttp://gruntjs.com/getting-started" target="_blank">Grunt getting started</a>
+                                Docs: <a href="http://gruntjs.com/getting-started" target="_blank">Grunt getting started</a>
                             </small></small>
                         </p>
                     </section>
@@ -460,6 +464,11 @@ var server = app.listen(port, function () {
                                 This will install the grunt-cli package globally.  "Globally" means the package will be installed to a directory that should included as part of your PATH command line variable.  This allows the package to be used as a command line tool.
                             </small>
                         </p>
+
+                        <small class="caption"><small>
+                            Docs: <a href="https://github.com/gruntjs/grunt-cli" target="_blank">grunt-cli</a>
+                        </small></small>
+
                     </section>
                     <section>
                         <h2>Gruntfile.js</h2>
