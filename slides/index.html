@@ -300,16 +300,19 @@ var server = app.listen(port, function () {
                 <section>
                     <section>
                         <img src="img/npm-logo.svg" alt="npm logo" class="logo-image" style="width: 40%"/><br>
-                        <span>Q: What does NPM stand for? </span><br>
-						<span class="fragment">A: Node Package Manager? <span class="fragment">NO!</span></span> <br>
-                        <span class="fragment">A: Notable Pastry Maker?</span> <span class="fragment">YES!</span> <br>
-                        <span class="fragment">A: Nietzsche's Preposterous Moustache?</span> <span class="fragment">YES!</span> <br>
-                        <span class="fragment">Nerd Alert: It is a recursive bacronymic abbreviation for "npm is not an acronym"</span> <br>
-                        <small class="fragment">BONUS Nerd Alert: You can contribte to <a href="https://github.com/npm/npm-expansions" target="_blank"> NPM expansions</a> to add your own!</small><br>
-						
+                        <p>
+                            <span>Q: What does npm stand for? </span><br>
+                            <span class="fragment">A: Node Package Manager? <span class="fragment">NO!</span></span> <br>
+                            <span class="fragment">A: Notable Pastry Maker?</span> <span class="fragment">YES!</span> <br>
+                            <span class="fragment">A: Nietzsche's Preposterous Moustache?</span> <span class="fragment">YES!</span> <br>
+                            <small class="fragment">Nerd Alert: It is a recursive bacronymic abbreviation for "npm is not an acronym"</small>
+                            <small class="fragment">BONUS Nerd Alert: You can contribte to <a href="https://github.com/npm/npm-expansions" target="_blank">npm expansions</a>. Add your own!</small><br>
+                        </p>
+
                         <small class="caption"><small>
-                            Docs: <a href="https://docs.npmjs.com/" target="_blank">These are the docs you're looking for.</a> <br>
-							Reference: <a href="https://docs.npmjs.com/misc/faq#if-npm-is-an-acronym-why-is-it-never-capitalized"> Not an acronym</a>.
+                            Docs: <a href="https://docs.npmjs.com/" target="_blank">These are the docs you're looking for</a>. <br>
+                            Reference: <a href="https://docs.npmjs.com/misc/faq#if-npm-is-an-acronym-why-is-it-never-capitalized" target="_blank"> Not an acronym</a>. <br>
+                            Reference: <a href="https://docs.npmjs.com/misc/faq#why-does-npm-hate-me" target="_blank"> npm is love</a>.
                         </small></small>
                     </section>
                     <section>
@@ -452,7 +455,7 @@ var server = app.listen(port, function () {
                             <pre><code>npm install -g grunt-cli</code></pre>
                         
                             <small class="caption"><small>
-                                Docs: <a href="http://gruntjs.com/getting-started" target="_blank">Grunt getting started</a>
+                                Docs: <a href="http://gruntjs.com/getting-started" target="_blank">Grunt - Getting started</a>
                             </small></small>
                         </p>
                     </section>
@@ -518,7 +521,7 @@ module.exports = function(grunt) {
                             <ul>
                                 <li>Compile <a href="https://github.com/gruntjs/grunt-contrib-less" target="_blank">Less</a>/<a href="https://github.com/gruntjs/grunt-contrib-sass" target="_blank">Sass</a></li>
                                 <li>Minify <a href="https://github.com/gruntjs/grunt-contrib-uglify" target="_blank">JS</a>/<a href="https://github.com/gruntjs/grunt-contrib-cssmin" target="_blank">CSS</a>/<a href="https://github.com/gruntjs/grunt-contrib-htmlmin" target="_blank">HTML</a></li>
-                                <li>Lint <a href="https://github.com/gruntjs/grunt-contrib-jshint" target="_blank">JS</a>/<a href="https://github.com/gruntjs/grunt-contrib-csslint">CSS</a>/<a href="https://github.com/htmllint/grunt-htmllint" target="_blank">HTML</a></li>
+                                <li>Lint <a href="https://github.com/gruntjs/grunt-contrib-jshint" target="_blank">JS</a>/<a href="https://github.com/gruntjs/grunt-contrib-csslint" target="_blank">CSS</a>/<a href="https://github.com/htmllint/grunt-htmllint" target="_blank">HTML</a></li>
                                 <li><a href="http://gruntjs.com/plugins" target="_blank">Much more</a></li>
                             </ul>
                             <br>
@@ -548,14 +551,28 @@ module.exports = function(grunt) {
 	                <section>
                         <img src="img/less-logo.png" alt="Less logo" class="logo-image"/>
 	                    <p>
-	                        "Less is a CSS pre-processor, meaning that it extends the CSS language, adding features that allow variables, mixins, functions and many other techniques..."
+                            <span>Q: What is Less? </span><br>
+                            <span class="fragment">A:  "Less is a CSS pre-processor, meaning that it extends the CSS language, adding features that allow variables, mixins, functions and many other techniques..."</span>
 	                    </p>
 	                    <small class="caption"><small>
 	                        Docs: <a href="http://lesscss.org/" target="_blank">Less - Getting Started</a> <br>
 	                    </small></small>					
 	                </section>
-					
-	                <section>
+
+                    <section>
+
+                        <h2>Less - Features</h2>
+                        <a href="http://lesscss.org/features/#features-overview-feature-variables" target="_blank">Variables</a> - Use them. <br>
+                        <a href="http://lesscss.org/features/#features-overview-feature-mixins" target="_blank">Mixins</a> - Also use them. <br>
+                        <a href="http://lesscss.org/features/#import-directives-feature" target="_blank">Import</a> - Organize your styles in files then use imports to share rules, variables, & mixins.
+                        <small class="caption"><small>
+                            Docs: <a href="http://lesscss.org/features/" target="_blank">Less - Features</a> <br>
+                            Docs: <a href="http://lesscss.org/functions/" target="_blank">Less - Functions</a>
+                        </small></small>
+                    </section>
+
+
+                    <section>
 	                    <h2>Installation</h2>
 	                    <p>
 	                    	Option 1 <br>
@@ -607,17 +624,6 @@ grunt.initConfig({
                         </small></small>
                     </section>
 
-                    <section>
-
-                        <h2>Less - Features</h2>
-                        <a href="http://lesscss.org/features/#features-overview-feature-variables" target="_blank">Variables</a> - Use them. <br>
-                        <a href="http://lesscss.org/features/#features-overview-feature-mixins" target="_blank">Mixins</a> - Also use them. <br>
-                        <a href="http://lesscss.org/features/#import-directives-feature" target="_blank">Import</a> - Organize your styles in files then share rules, variables, & mixins with imports.
-                        <small class="caption"><small>
-                            Docs: <a href="http://lesscss.org/features/" target="_blank">Less - Features</a> <br>
-                            Docs: <a href="http://lesscss.org/functions/" target="_blank">Less - Functions</a>
-                        </small></small>
-                    </section>
 
 
 					
