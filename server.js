@@ -58,6 +58,10 @@ app.get("/users/current", function (req, res) {
     }
 });
 
+app.get("/heartbeat", function(req, res){
+    res.status(200).send({ heartbeat: "I am alive" });
+});
+
 app.post("/users/current/games", function (req, res) {
     var game = req.body;
 
