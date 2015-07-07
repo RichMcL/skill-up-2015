@@ -1,15 +1,21 @@
 <!DOCTYPE html>
 <html data-ng-app="skill-up-ng-app">
-    <head>
-        <title>Skill-Up 2015 East Lansing</title>
-        <script type="text/javascript" src="/node_modules/angular/angular.min.js"></script>
-        <script type="text/javascript" src="/scripts/app.js"></script>
-    </head>
-    <body data-ng-controller="MainCtrl as main">
-        <h1>Skill-Up 2015 East Lansing</h1>
-        <div>
-            {{main.text}}<br>
-            XHR test: {{main.xhrTest}}
-        </div>
-    </body>
+<head>
+    <title>Skill-Up 2015 East Lansing</title>
+    <link rel="stylesheet" type="text/css" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/node_modules/bootstrap/dist/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="/app.css">
+
+    <script type="text/javascript" src="/node_modules/angular/angular.min.js"></script>
+    <script type="text/javascript" src="/node_modules/angular-route/angular-route.min.js"></script>
+    <script type="text/javascript" src="/scripts/app.js"></script>
+    <script type="text/javascript" src="/login/login.js"></script>
+    <script type="text/javascript" src="/home/home.js"></script>
+</head>
+<body data-ng-controller="MainCtrl as main">
+<div class="jumbotron">
+    <h1>Skill-Up 2015 East Lansing</h1>
+</div>
+<data-ng-view></data-ng-view>
+</body>
 </html>
