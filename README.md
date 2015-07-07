@@ -14,16 +14,16 @@ Session #2 - [Fri July 10, 2015](https://skillup2015eastlansing.sched.org/event/
 - Clone this repository
   - <code>git clone https://github.com/RichMcL/skill-up-2015</code> -- downloads to working directory
   - Or download and extract the [ZIP](https://github.com/RichMcL/skill-up-2015/archive/master.zip)
-  - If you installed the GitHub client you can click the "Clone in Desktop" button on the right side of the [repo](https://github.com/RichMcL/skill-up-2015).
+  - Or if you installed the GitHub client you can click the "Clone in Desktop" button on the right side of the [repo](https://github.com/RichMcL/skill-up-2015).
 - Run <code>npm install</code> from the root of the project
   -  Optional - Run <code>npm install -g nodemon</code> to install [nodemon](http://nodemon.io/)
     - Watches for changes to automatically restart server
 - Run <code>node server</code> without nodemon
-  - Optional - Or run <code>nodemon server.js</code> if you installed nodemon
+  - Optional - Run <code>nodemon server.js</code> instead if you installed nodemon
 - Visit [http://localhost:8080/](http://localhost:8080/) in the browser
 
 # Solutions
-- For the solution branch
+- For the solution branch <br>
 <code>git clone -b answers https://github.com/RichMcL/skill-up-2015.git skill-up-2015-answers</code>
 
 # Notes
