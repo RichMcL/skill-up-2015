@@ -23,7 +23,7 @@ Session #2 - [Fri July 10, 2015](https://skillup2015eastlansing.sched.org/event/
 - Visit [http://localhost:8080/](http://localhost:8080/) in the browser
 
 # Solutions
-- For the solution branch <br>
+- To clone down the solution branch run<br>
 <code>git clone -b answers https://github.com/RichMcL/skill-up-2015.git skill-up-2015-answers</code>
 
 # Notes
