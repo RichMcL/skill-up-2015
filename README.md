@@ -25,9 +25,9 @@ Session #2 - [Fri July 10, 2015](https://skillup2015eastlansing.sched.org/event/
 
 # Notes
 - Windows users may have to [update their path environment setting](https://www.google.com/webhp?sourceid=chrome-instant&ion=1&espv=2&es_th=1&ie=UTF-8#q=windows%20adding%20to%20path&es_th=1)
- - Set it to %USERPROFILE%\Application Data\npm\node_modules (Windows XP)
- - %AppData%\npm\node_modules (Windows 7)
- - Or wherever npm ends up installing the modules on your machine.
+ - Windows XP- %USERPROFILE%\Application Data\npm\node_modules
+ - Windows 7- %AppData%\npm\node_modules
+ - Or wherever npm ends up installing the modules on your machine
 
 
 
