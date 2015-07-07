@@ -483,8 +483,7 @@ module.exports = function(grunt) {
   grunt.registerTask('default', ['watch']);
 
 };
-</code>
-</pre>
+</code></pre>
 </small>
 <br>
 <small> Sample </small>
@@ -506,14 +505,87 @@ module.exports = function(grunt) {
                         Is it working? <a href="http://localhost:8080/app.css" target="_blank">app.css</a> should be generated
                     </p>
                 </section>
+				
+				<section>
+					
+	                <section>
+	                    <h2>LESS</h2>
+	                    <p>
+	                        "Less is a CSS pre-processor, meaning that it extends the CSS language, adding features that allow variables, mixins, functions and many other techniques..."
+	                    </p>
+	                    <small class="caption"><small>
+	                        Docs: <a href="http://lesscss.org/" target="_blank">Less - Getting Started</a> <br>
+	                    </small></small>					
+	                </section>
+					
+	                <section>
+	                    <h2>Installation</h2>
+	                    <p>
+	                    	Option 1 <br>
+							<small>Just install the compiler globally</small>
+	                    </p>
+<pre>
+<code data-trim contenteditable>
+npm install -g less
+</code></pre>
+                        <small>Then you can manually compile your files</small>
+<pre><code data-trim contenteditable>
+    lessc styles.less > styles.css
+</code></pre>
 
-                <section>
-                    <h2>LESS</h2>
-                    <p>
-                        CSS Preprocessor
-                    </p>
+
+                    </section>
+
+                    <section>
+                        <h2>Installation</h2>
+                        <p>
+                            Option 2 <br>
+                            <small>Install & use Grunt Contrib Less locally (to your project)</small>
+                        </p>
+<pre>
+<code data-trim contenteditable>
+    npm install grunt-contrib-less --save
+</code></pre>
+                        <small>Then add a task / configure your Grintfile.js</small>
+<pre><code data-trim contenteditable>
+
+grunt.initConfig({
+    pkg: grunt.file.readJSON('package.json'),
+    less: {
+        development: {
+            options: {
+                paths: ["assets/css"]
+            },
+            files: {
+                "path/to/result.css": "path/to/source.less"
+            }
+        }
+    }
+});
+
+</code></pre>
+
+                        <small class="caption"><small>
+                            Docs: <a href="https://github.com/gruntjs/grunt-contrib-less" target="_blank">Grunt Contrib - Less</a> <br>
+                        </small></small>
+                    </section>
+
+                    <section>
+
+                        <h2>Less - Features</h2>
+                        <a href="http://lesscss.org/features/#features-overview-feature-variables" target="_blank">Variables</a> - Use them. <br>
+                        <a href="http://lesscss.org/features/#features-overview-feature-mixins" target="_blank">Mixins</a> - Also use them. <br>
+                        <a href="http://lesscss.org/features/#import-directives-feature" target="_blank">Import</a> - Organize your styles in files then share rules, variables, & mixins with imports.
+                        <small class="caption"><small>
+                            Docs: <a href="http://lesscss.org/features/" target="_blank">Less - Features</a> <br>
+                            Docs: <a href="http://lesscss.org/functions/" target="_blank">Less - Functions</a>
+                        </small></small>
+                    </section>
+
+
+					
                 </section>
-
+				
                 <section>
                     <h2>EXERCISE #5</h2>
                     <p>Let's get Grunt watching LESS!</p>
