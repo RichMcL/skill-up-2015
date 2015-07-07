@@ -1,9 +1,16 @@
 <div id="home" class="panel-body" data-ng-controller="HomeCtrl as home">
     <h3>Welcome, {{home.user.name}}!</h3>
     <h4>Favorite Games</h4>
+
     <ul>
-        <li data-ng-repeat="game in home.user.games" data-ng-class="{ 'beat': game.beat}" data-ng-click="home.changeGameStatus(game)">{{game.title}}</li>
+        <!--
+            EXERCISE #7
+            Create an li for game in home.user.games
+            For each game, conditionally add a class of 'beat' based on the value the game's beat property
+            On click of the li, call home.changeGameStatus() in home.js
+        -->
     </ul>
+
     <input type="text" class="form-control" data-ng-model="home.newGame.title" placeholder="Game Title">
     <button data-ng-click="home.addGame()" class="btn btn-success">Add Game</button><br>
     <button data-ng-click="home.logout()" class="btn btn-danger">Logout</button>
