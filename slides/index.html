@@ -493,6 +493,29 @@ module.exports = function(grunt) {
                                 Docs: <a href="https://github.com/tkellen/js-matchdep" target="_blank">Matchdep</a>
                             </small></small>
                     </section>
+
+
+                    <section>
+                        <h2>
+                            Plugins
+                        </h2>
+                        <p>
+                            There are Grunt plugins to do things such as
+                            <ul>
+                                <li>Compile <a href="https://github.com/gruntjs/grunt-contrib-less" target="_blank">Less</a>/<a href="https://github.com/gruntjs/grunt-contrib-sass" target="_blank">Sass</a></li>
+                                <li>Minify <a href="https://github.com/gruntjs/grunt-contrib-uglify" target="_blank">JS</a>/<a href="https://github.com/gruntjs/grunt-contrib-cssmin" target="_blank">CSS</a>/<a href="https://github.com/gruntjs/grunt-contrib-htmlmin" target="_blank">HTML</a></li>
+                                <li>Lint <a href="https://github.com/gruntjs/grunt-contrib-jshint" target="_blank">JS</a>/<a href="https://github.com/gruntjs/grunt-contrib-csslint">CSS</a>/<a href="https://github.com/htmllint/grunt-htmllint" target="_blank">HTML</a></li>
+                                <li><a href="http://gruntjs.com/plugins" target="_blank">Much more</a></li>
+                            </ul>
+                            <br>
+                            <br>
+                            <a href="http://gruntjs.com/plugins/contrib">grunt-contrib-*</a> plugins are "legit"
+                        </p>
+                        <small>Install Grunt plugins to your project like any other package.</small>
+<pre><code data-trim contenteditable>npm install &lt;pkg&gt; --save
+</code></pre>
+                    </section>
+
                 </section>
 
                 <section>
@@ -540,13 +563,13 @@ npm install -g less
                         <h2>Installation</h2>
                         <p>
                             Option 2 <br>
-                            <small>Install & use Grunt Contrib Less locally (to your project)</small>
+                            <small>Locally (to your project) install & use grunt-contrib-less</small>
                         </p>
 <pre>
 <code data-trim contenteditable>
     npm install grunt-contrib-less --save
 </code></pre>
-                        <small>Then add a task / configure your Grintfile.js</small>
+                        <small>Then add a task / configure your Gruntfile.js</small>
 <pre><code data-trim contenteditable>
 
 grunt.initConfig({
