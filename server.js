@@ -25,6 +25,11 @@ var users = [
 
 var authenticatedUser;
 
+/**
+ * EXERCISE #3
+ * Create a resource for /heartbeat to test Express
+ */
+
 app.post("/login", function (req, res) {
     var user = req.body;
 
@@ -56,10 +61,6 @@ app.get("/users/current", function (req, res) {
     } else {
         res.status(404).send();
     }
-});
-
-app.get("/heartbeat", function(req, res){
-    res.status(200).send({ heartbeat: "I am alive" });
 });
 
 app.post("/users/current/games", function (req, res) {
