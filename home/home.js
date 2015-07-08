@@ -23,7 +23,7 @@ skillup.controller("HomeCtrl", ["$scope", "$http", function ($scope, $http) {
 
     home.logout = function(){
         /**
-         * EXERCISE #8
+         * EXERCISE #7
          * Complete the logout function
          */
 
